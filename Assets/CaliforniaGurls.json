@@ -1,0 +1,12 @@
+{
+    "beatEvents": [
+        {
+            "time": 5.5,
+            "direction": "Up"
+        },
+        {
+            "time": 3.0,
+            "direction": "Down"
+        }
+    ]
+}
