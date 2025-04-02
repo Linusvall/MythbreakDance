@@ -31,7 +31,7 @@ Material:
     m_Floats:
     - _ColorIntensity: 1.591
     - _EmissionMultiplier: 1.91
-    - _Speed: 122
+    - _Speed: 131
     m_Colors:
     - _Color1: {r: 0.4575472, g: 0.8519572, b: 1, a: 1}
     - _Color2: {r: 0, g: 0, b: 0, a: 1}
