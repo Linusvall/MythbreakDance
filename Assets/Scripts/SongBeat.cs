@@ -46,7 +46,7 @@ public class SongBeat : MonoBehaviour
     {
         if (audioSource != null && audioSource.isPlaying)
         {
-            if (audioSource.time >= audioSource.clip.length - 100f)
+            if (audioSource.time >= audioSource.clip.length - 0.1f)
                 {
                 beatmapManager.FinishedEditingBeatmap();
                 audioSource.Stop();

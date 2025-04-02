@@ -1,0 +1,176 @@
+{
+    "beatEvents": [
+        {
+            "time": 15.911127090454102,
+            "direction": "Right"
+        },
+        {
+            "time": 17.789369583129884,
+            "direction": "Left"
+        },
+        {
+            "time": 19.635574340820314,
+            "direction": "Right"
+        },
+        {
+            "time": 22.06195831298828,
+            "direction": "Up"
+        },
+        {
+            "time": 22.96807861328125,
+            "direction": "Up"
+        },
+        {
+            "time": 23.412860870361329,
+            "direction": "Up"
+        },
+        {
+            "time": 23.924762725830079,
+            "direction": "Up"
+        },
+        {
+            "time": 24.84853744506836,
+            "direction": "Up"
+        },
+        {
+            "time": 25.25945472717285,
+            "direction": "Up"
+        },
+        {
+            "time": 25.817914962768556,
+            "direction": "Up"
+        },
+        {
+            "time": 26.745065689086915,
+            "direction": "Up"
+        },
+        {
+            "time": 27.156137466430665,
+            "direction": "Up"
+        },
+        {
+            "time": 27.420503616333009,
+            "direction": "Left"
+        },
+        {
+            "time": 27.639013290405275,
+            "direction": "Right"
+        },
+        {
+            "time": 29.544212341308595,
+            "direction": "Up"
+        },
+        {
+            "time": 29.993255615234376,
+            "direction": "Up"
+        },
+        {
+            "time": 30.467147827148439,
+            "direction": "Up"
+        },
+        {
+            "time": 30.89588165283203,
+            "direction": "Up"
+        },
+        {
+            "time": 31.361553192138673,
+            "direction": "Up"
+        },
+        {
+            "time": 32.25114822387695,
+            "direction": "Down"
+        },
+        {
+            "time": 33.2242546081543,
+            "direction": "Up"
+        },
+        {
+            "time": 33.7035026550293,
+            "direction": "Up"
+        },
+        {
+            "time": 34.17940902709961,
+            "direction": "Up"
+        },
+        {
+            "time": 34.624061584472659,
+            "direction": "Up"
+        },
+        {
+            "time": 35.08552551269531,
+            "direction": "Up"
+        },
+        {
+            "time": 36.063934326171878,
+            "direction": "Down"
+        },
+        {
+            "time": 37.821250915527347,
+            "direction": "Right"
+        },
+        {
+            "time": 39.73507308959961,
+            "direction": "Left"
+        },
+        {
+            "time": 40.72517013549805,
+            "direction": "Up"
+        },
+        {
+            "time": 42.07614517211914,
+            "direction": "Up"
+        },
+        {
+            "time": 43.51097869873047,
+            "direction": "Up"
+        },
+        {
+            "time": 44.42982864379883,
+            "direction": "Up"
+        },
+        {
+            "time": 45.28997802734375,
+            "direction": "Up"
+        },
+        {
+            "time": 45.765350341796878,
+            "direction": "Up"
+        },
+        {
+            "time": 46.28047180175781,
+            "direction": "Up"
+        },
+        {
+            "time": 47.13294219970703,
+            "direction": "Up"
+        },
+        {
+            "time": 47.678306579589847,
+            "direction": "Up"
+        },
+        {
+            "time": 48.15242385864258,
+            "direction": "Up"
+        },
+        {
+            "time": 49.025699615478519,
+            "direction": "Up"
+        },
+        {
+            "time": 49.53764724731445,
+            "direction": "Up"
+        },
+        {
+            "time": 50.032630920410159,
+            "direction": "Up"
+        },
+        {
+            "time": 50.87599563598633,
+            "direction": "Up"
+        },
+        {
+            "time": 51.40473556518555,
+            "direction": "Up"
+        }
+    ]
+}
