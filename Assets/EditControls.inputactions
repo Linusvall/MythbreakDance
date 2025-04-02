@@ -1,0 +1,34 @@
+{
+    "name": "EditControls",
+    "maps": [
+        {
+            "name": "PlayerEdit",
+            "id": "0011b003-c76d-46c6-a6f5-c13b2d939530",
+            "actions": [
+                {
+                    "name": "DPad",
+                    "type": "Value",
+                    "id": "04ed5d93-94f7-4dbb-9b23-4b65b4352949",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "05a62b96-455d-47f5-a017-7cb5dff0b576",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DPad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

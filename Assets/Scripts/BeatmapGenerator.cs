@@ -4,22 +4,32 @@ using UnityEngine;
 public class BeatmapGenerator : MonoBehaviour
 {
     private Beatmap beatmap;
-    [SerializeField] bool createNewBeatmap;
-    [SerializeField] string beatmapName;
+    private string currentBeatmapName;
 
 
-    void Start()
+
+    public void AddToBeatMap(float time, string direction)
     {
-        if (createNewBeatmap)
+        beatmap.AddEvent(time, direction);
+    }
+
+    public void SetCurrentBeatMapName(string beatmapName)
+    {
+        currentBeatmapName = beatmapName;
+        beatmap = new Beatmap();
+    }
+
+    public void FinishedEditingBeatmap()
+    {
+        if (beatmap != null)
         {
-            beatmap = new Beatmap();
-            beatmap.AddEvent(0.5f, "Up");
-            beatmap.AddEvent(1.0f, "Down");
-            AddToJsonFile(beatmapName);
+            AddToJsonFile(currentBeatmapName);
         }
     }
 
-    private void AddToJsonFile(string fileName)
+
+    
+    public void AddToJsonFile(string fileName)
     {
         string filePath = Application.dataPath + "/" + fileName + ".json";
 

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4259675180191495552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3948707417434860515}
+  - component: {fileID: 5344230996940839350}
+  m_Layer: 0
+  m_Name: EditModeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3948707417434860515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259675180191495552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8822162, y: 0.62765527, z: 7.477086}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5344230996940839350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259675180191495552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72702cc37318e874c96d86b5ec172418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beatmapGenerator: {fileID: 0}
+  editModeAction:
+    m_Name: Edit Mode
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1075c02b-e3ea-48e7-b611-35d69cb77fdb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 323aaa40-448b-460c-afad-5fd03d9899ee
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Edit Mode
+      m_Flags: 4
+    - m_Name: up
+      m_Id: fc2f47e5-b649-40f6-9790-99b22783e7f4
+      m_Path: <Gamepad>/dpad/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Edit Mode
+      m_Flags: 8
+    - m_Name: down
+      m_Id: c794aa09-1839-4047-8226-57f939c208c6
+      m_Path: <Gamepad>/dpad/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Edit Mode
+      m_Flags: 8
+    - m_Name: left
+      m_Id: d6541f53-6d50-4a80-ac59-6939853034d1
+      m_Path: <Gamepad>/dpad/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Edit Mode
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 53e98dad-2ec3-4106-a54d-813aaa4537a8
+      m_Path: <Gamepad>/dpad/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Edit Mode
+      m_Flags: 8
+    m_Flags: 0
