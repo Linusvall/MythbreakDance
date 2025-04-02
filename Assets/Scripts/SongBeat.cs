@@ -4,25 +4,53 @@ using UnityEngine;
 
 public class SongBeat : MonoBehaviour
 {
-    [SerializeField] public List<AudioClip> songArray = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> songArray = new List<AudioClip>();
     [SerializeField] private BeatmapGenerator beatmapManager;
+    [SerializeField] private EditMode editMode;
+
     private Beatmap currentBeatmap;
+    private AudioSource audioSource;
     void Start()
     {
-        if (beatmapManager != null)
-        {
-            currentBeatmap = beatmapManager.LoadJsonFile(songArray[0].name);
-        }
+        audioSource = GetComponent<AudioSource>();
+    }
 
-        for (int i = 0; i < currentBeatmap.beatEvents.Count; i++)
+    public void PlaySong(string songName)
+    {
+        AudioClip clipToPlay = GetSong(songName);
+        if (clipToPlay != null)
         {
-            print(currentBeatmap.beatEvents[i].time);
+            audioSource.clip = clipToPlay;
+            audioSource.Play();
+
+            if (editMode != null)
+            {
+                editMode.StartEditing(songName);
+            }
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public AudioClip GetSong(string songName)
     {
-        
+        foreach (AudioClip clip in songArray)
+        {
+            if (clip.name == songName)
+            {
+                return clip;
+            }
+        }
+        return null;
+    }
+
+    private void Update()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            if (audioSource.time >= audioSource.clip.length - 100f)
+                {
+                beatmapManager.FinishedEditingBeatmap();
+                audioSource.Stop();
+                }
+        }
     }
 }
