@@ -1,23 +1,34 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class DanceArrow : MonoBehaviour
 {
     public string direction;
-    [SerializeField] float speed = 1f;  
+    private float t;
+    private Vector3 startPosition;
     private Vector3 targetPosition;
+    [SerializeField] private float timeToReachTarget;
 
     private void Start()
     {
-        targetPosition = transform.position;
+        startPosition = transform.position;
     }
     private void Update()
     {
-        targetPosition.y -= speed * Time.deltaTime;  
-        transform.position = Vector3.Lerp(transform.position, targetPosition, 0.1f);
+
+        t += Time.deltaTime / timeToReachTarget;
+        transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+
     }
 
     public void SetDirection(string direction)
     {
         this.direction = direction;
+    }
+
+    public void SetTarget(Vector3 target)
+    {
+        targetPosition = target;
+       
     }
 }
