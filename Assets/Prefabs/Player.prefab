@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 4260135110574638093}
+  directionManager: {fileID: 0}
 --- !u!114 &4260135110574638093
 MonoBehaviour:
   m_ObjectHideFlags: 0
