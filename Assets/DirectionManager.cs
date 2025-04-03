@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class DirectionManager : MonoBehaviour
 {
     [SerializeField] Text scoreText;
-    Dictionary<string, bool> directionMap = new Dictionary<string, bool>();
+    Dictionary<string, int> directionMap = new Dictionary<string, int>();
     private int score = 0;
     private int multiplier = 1;
 
     private void Start()
     {
-        directionMap.Add("Up", false);
-        directionMap.Add("Down", false);
-        directionMap.Add("Left", false);
-        directionMap.Add("Right", false);
+        directionMap.Add("Up", 0);
+        directionMap.Add("Down", 0);
+        directionMap.Add("Left", 0);
+        directionMap.Add("Right", 0);
     }
 
 
@@ -43,10 +43,9 @@ public class DirectionManager : MonoBehaviour
 
     private void CheckIfValid(string direction, Player player)
     {
-        if(directionMap[direction] == true)
+        if(directionMap[direction] >= 1)
         {
             Debug.Log("Den var rätt");
-            directionMap[direction] = false;
             UpdateScore();
             multiplier++;
             
@@ -67,17 +66,17 @@ public class DirectionManager : MonoBehaviour
     {
         if (directionMap.ContainsKey(direction))  
         {
-            directionMap[direction] = true;
+            directionMap[direction] += 1;
 
         }
-        StartCoroutine(DeactivateAfterDelay(direction, 0.5f));
+        StartCoroutine(DeactivateAfterDelay(direction, 0.3f));
     }
     private void DeactivateSubCatchBox(string direction)
     {
 
         if (directionMap.ContainsKey(direction)) 
         {
-            directionMap[direction] = false;
+            directionMap[direction] -= 1;
         }
     }
     private IEnumerator DeactivateAfterDelay(string direction, float delay)

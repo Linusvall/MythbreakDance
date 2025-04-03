@@ -57,18 +57,18 @@ public class BeatmapGenerator : MonoBehaviour
 
     public Beatmap LoadJsonFile(string fileName)
     {
-        string filePath = Application.dataPath + "/" + fileName + ".json";
+        
+        TextAsset jsonFile = Resources.Load<TextAsset>(fileName);
 
-        if (File.Exists(filePath))
+        if (jsonFile != null)
         {
-            string json = File.ReadAllText(filePath);
-
-            Beatmap beatmap = JsonUtility.FromJson<Beatmap>(json);
+            Beatmap beatmap = JsonUtility.FromJson<Beatmap>(jsonFile.text);
 
             return beatmap;
         }
         else
         {
+            Debug.LogError("File not found: " + fileName);
             return new Beatmap();
         }
     }
