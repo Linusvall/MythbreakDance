@@ -4,7 +4,7 @@ public class CatchBox : MonoBehaviour
 {
     [SerializeField] public string direction;
     [SerializeField] private PlayMode playMode;
-    public bool isActive;
+    [SerializeField] private DirectionManager directionManager;
     private GameObject danceArrow;
 
     private void OnTriggerEnter(Collider other)
@@ -14,7 +14,7 @@ public class CatchBox : MonoBehaviour
             if (other.GetComponent<DanceArrow>() != null)
             {
                 danceArrow = other.gameObject;
-                isActive = true;
+                directionManager.ActivateSubCatchBox(direction);
                 Invoke("DisableObject", 0.5f);
             }
         }
@@ -23,6 +23,5 @@ public class CatchBox : MonoBehaviour
     private void DisableObject()
     {
         Destroy(danceArrow);
-        isActive = false;
     }
 }
