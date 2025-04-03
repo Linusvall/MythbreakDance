@@ -123,6 +123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: Left
   playMode: {fileID: 0}
+  directionManager: {fileID: -7295083801491089057}
+  isActive: 0
 --- !u!1 &7086708113073424792
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: Right
   playMode: {fileID: 0}
+  directionManager: {fileID: -7295083801491089057}
+  isActive: 0
 --- !u!1 &7683847939691186660
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: Down
   playMode: {fileID: 0}
+  directionManager: {fileID: -7295083801491089057}
+  isActive: 0
 --- !u!1 &8027578903413945075
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4254590344158674640}
   - component: {fileID: 1011250016564080745}
+  - component: {fileID: -7295083801491089057}
   m_Layer: 0
   m_Name: CatchBox
   m_TagString: Untagged
@@ -432,6 +439,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7295083801491089057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8027578903413945075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53253534ff6212444b760afb225156f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catchBoxNumber: 0
 --- !u!1 &8438441238759115119
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,3 +575,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: Up
   playMode: {fileID: 0}
+  directionManager: {fileID: -7295083801491089057}
+  isActive: 0
