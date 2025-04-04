@@ -734,6 +734,22 @@ PrefabInstance:
       propertyPath: beatmapGenerator
       value: 
       objectReference: {fileID: 818223219}
+    - target: {fileID: 5344230996940839350, guid: dcea9b7dad744324192516d7e7161313, type: 3}
+      propertyPath: editModeAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Keyboard>/w
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344230996940839350, guid: dcea9b7dad744324192516d7e7161313, type: 3}
+      propertyPath: editModeAction.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <Keyboard>/s
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344230996940839350, guid: dcea9b7dad744324192516d7e7161313, type: 3}
+      propertyPath: editModeAction.m_SingletonActionBindings.Array.data[3].m_Path
+      value: <Keyboard>/a
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344230996940839350, guid: dcea9b7dad744324192516d7e7161313, type: 3}
+      propertyPath: editModeAction.m_SingletonActionBindings.Array.data[4].m_Path
+      value: <Keyboard>/d
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1026,7 +1042,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Kant
+          m_StringArgument: Crazy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1450746500
@@ -1716,6 +1732,14 @@ PrefabInstance:
       propertyPath: beatmapManager
       value: 
       objectReference: {fileID: 818223219}
+    - target: {fileID: 4633629037974158759, guid: 46a159864aa39584190c73c2ae5dcec9, type: 3}
+      propertyPath: songArray.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633629037974158759, guid: 46a159864aa39584190c73c2ae5dcec9, type: 3}
+      propertyPath: 'songArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f0f070c105e9d4cdaa04dbe8715748c2, type: 3}
     - target: {fileID: 8411120176312742475, guid: 46a159864aa39584190c73c2ae5dcec9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
