@@ -7,7 +7,6 @@ public class PlayMode : MonoBehaviour
     [SerializeField] private BeatmapGenerator beatmapManager;
     [SerializeField] private GameObject prefabToSpawn;
     [SerializeField] private GameObject[] spawnPositionArrayPlayer1;
-    [SerializeField] private GameObject[] spawnPositionArrayPlayer2;
 
     [SerializeField] private Material leftArrowMaterial;
     [SerializeField] private Material rightArrowMaterial;
@@ -116,8 +115,6 @@ public class PlayMode : MonoBehaviour
 
     private float GetCorrectPositionX(string directionName, int playerIndex)
     {
-        if (playerIndex == 1)
-        {
             for (int i = 0; i < spawnPositionArrayPlayer1.Length; i++)
             {
                 if (spawnPositionArrayPlayer1[i].GetComponent<CatchBox>().direction == directionName)
@@ -125,24 +122,15 @@ public class PlayMode : MonoBehaviour
                     return spawnPositionArrayPlayer1[i].transform.position.x;
                 }
             }
-        }
-        else
-        {
-            for (int i = 0; i < spawnPositionArrayPlayer2.Length; i++)
-            {
-                if (spawnPositionArrayPlayer2[i].GetComponent<CatchBox>().direction == directionName)
-                {
-                    return spawnPositionArrayPlayer2[i].transform.position.x;
-                }
-            }
-        }
+        
+            
+        
         return 0;
     }
 
     private Vector3 GetCorrectPosition(string directionName, int playerIndex)
     {
-        if(playerIndex == 1)
-        {
+        
             for (int i = 0; i < spawnPositionArrayPlayer1.Length; i++)
             {
                 if (spawnPositionArrayPlayer1[i].GetComponent<CatchBox>().direction == directionName)
@@ -150,17 +138,8 @@ public class PlayMode : MonoBehaviour
                     return spawnPositionArrayPlayer1[i].transform.position;
                 }
             }
-        }
-        else
-        {
-            for (int i = 0; i < spawnPositionArrayPlayer2.Length; i++)
-            {
-                if (spawnPositionArrayPlayer2[i].GetComponent<CatchBox>().direction == directionName)
-                {
-                    return spawnPositionArrayPlayer2[i].transform.position;
-                }
-            }
-        }
+        
+        
         
         return new Vector3(0,0,0);
     }
