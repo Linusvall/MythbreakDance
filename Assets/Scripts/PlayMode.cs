@@ -21,18 +21,29 @@ public class PlayMode : MonoBehaviour
 
     [SerializeField] private string songToPlay;
     [SerializeField] private float waitToPlay;
+    [SerializeField] private Animator animator1;
+    [SerializeField] private Animator animator2;
 
-    void Start()
+
+
+
+    private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-
-        Invoke("WaitAndPlay", waitToPlay);
-    }
-
-    private void WaitAndPlay()
-    {
         PlaySong(songToPlay);
+
+        if(animator1 != null)
+        {
+            animator1.Play("Unreal Take");
+        }
+
+        if (animator2 != null)
+        {
+            animator2.Play("Unreal Take");
+        }
     }
+
+    
 
     public void PlaySong(string songName)
     {
@@ -70,7 +81,6 @@ public class PlayMode : MonoBehaviour
                 if(GetTime() >= currentBeatmap.beatEvents[currentIndex].time - 2f)
                 {
                     SpawnPrefab(1);
-                    SpawnPrefab(2);
                     
                     currentIndex++;
                 }
