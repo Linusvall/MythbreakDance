@@ -1272,6 +1272,14 @@ PrefabInstance:
       value: PlayModeManager
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: animator1
+      value: 
+      objectReference: {fileID: 415262157}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: animator2
+      value: 
+      objectReference: {fileID: 654004306}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: songToPlay
       value: Check
       objectReference: {fileID: 0}
@@ -1279,6 +1287,14 @@ PrefabInstance:
       propertyPath: waitToPlay
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: animationClip1
+      value: 
+      objectReference: {fileID: 8993902097722301239, guid: 17a78be2a34ba401cb909e672447bcbf, type: 3}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: animationClip2
+      value: 
+      objectReference: {fileID: 8993902097722301239, guid: 36e9727b58e67409ab1d122861876f33, type: 3}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: beatmapManager
       value: 
