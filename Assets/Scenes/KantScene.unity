@@ -1753,6 +1753,10 @@ PrefabInstance:
       value: PlayModeManager
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: delay
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: animator1
       value: 
       objectReference: {fileID: 777030093}
@@ -1762,7 +1766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: waitToPlay
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: beatmapManager

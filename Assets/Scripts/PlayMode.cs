@@ -26,6 +26,8 @@ public class PlayMode : MonoBehaviour
 
     [SerializeField] private Canvas danceFinishedCanvas;
 
+    [SerializeField] private float delay;
+
 
     private void Awake()
     {
@@ -78,7 +80,7 @@ public class PlayMode : MonoBehaviour
         {
             if (currentIndex >= 0 && currentIndex < currentBeatmap.beatEvents.Count)
             {
-                if(GetTime() >= currentBeatmap.beatEvents[currentIndex].time - 2f)
+                if(GetTime() >= currentBeatmap.beatEvents[currentIndex].time - delay)
                 {
                     SpawnPrefab(1);
                     
