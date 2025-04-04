@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DirectionManager : MonoBehaviour
 {
     [SerializeField] Text scoreText;
+    [SerializeField] Text finalScoreText;
     [SerializeField] GameObject successParticlePrefab;
     [SerializeField] GameObject errorParticlePrefab;
     [SerializeField] Transform positionToSpawnLeft;
@@ -69,6 +70,7 @@ public class DirectionManager : MonoBehaviour
     {
         score += 50 * multiplier;
         scoreText.text = score.ToString();
+        finalScoreText.text = score.ToString();
     }
     public void ActivateSubCatchBox(string direction)
     {
