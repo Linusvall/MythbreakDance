@@ -1317,7 +1317,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Kant
+          m_StringArgument: Crazy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1450746500
@@ -2041,6 +2041,10 @@ PrefabInstance:
       value: PlayModeManager
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: songToPlay
+      value: Crazy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: beatmapManager
       value: 
       objectReference: {fileID: 818223219}
@@ -2060,6 +2064,14 @@ PrefabInstance:
       propertyPath: rightArrowMaterial
       value: 
       objectReference: {fileID: 2100000, guid: f81dba2167a7efb419e558bade41317f, type: 2}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: songArray.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: 'songArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f0f070c105e9d4cdaa04dbe8715748c2, type: 3}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: spawnPositionArray.Array.size
       value: 4
