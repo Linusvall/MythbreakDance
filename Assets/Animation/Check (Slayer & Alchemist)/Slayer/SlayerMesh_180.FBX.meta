@@ -3,7 +3,12 @@ guid: 107dba99039db5a40b3976c983a44052
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KnightAxe_007
+    second: {fileID: 2100000, guid: 0135092fc98679348a4b992749d66b7d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

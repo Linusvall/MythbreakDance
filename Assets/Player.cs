@@ -15,7 +15,12 @@ public class Player : MonoBehaviour
     public void ActivateDanceDirection(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-        directionManager.SendDanceDirectionPlayer(context.ReadValue<Vector2>(), this);
+
+        if(directionManager != null)
+        {
+
+            directionManager.SendDanceDirectionPlayer(context.ReadValue<Vector2>(), this);
+        }
        
     }
 }
