@@ -24,7 +24,7 @@ public class PlayMode : MonoBehaviour
     [SerializeField] private Animator animator1;
     [SerializeField] private Animator animator2;
 
-
+    [SerializeField] private Canvas danceFinishedCanvas;
 
 
     private void Awake()
@@ -90,6 +90,7 @@ public class PlayMode : MonoBehaviour
             {
                 //Ending game here
                 isPlaying = false;
+                danceFinishedCanvas.gameObject.SetActive(true);
             }
         }
     }
