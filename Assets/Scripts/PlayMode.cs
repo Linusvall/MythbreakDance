@@ -27,6 +27,7 @@ public class PlayMode : MonoBehaviour
     [SerializeField] private Canvas danceFinishedCanvas;
 
     [SerializeField] private float delay;
+    [SerializeField] private float animationDelay;
 
 
     private void Awake()
@@ -34,9 +35,14 @@ public class PlayMode : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         PlaySong(songToPlay);
 
-        if(animator1 != null)
+        Invoke("WaitAnimation", animationDelay);
+    }
+
+   private void WaitAnimation()
+    {
+        if (animator1 != null)
         {
-            animator1.Play("Unreal Take");
+            animator1.SetTrigger("PlayTrigger");
         }
 
         if (animator2 != null)
@@ -44,8 +50,6 @@ public class PlayMode : MonoBehaviour
             animator2.Play("Unreal Take");
         }
     }
-
-    
 
     public void PlaySong(string songName)
     {

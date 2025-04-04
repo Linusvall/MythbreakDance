@@ -1979,7 +1979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: delay
-      value: 1.7
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: animator1
@@ -2005,6 +2005,10 @@ PrefabInstance:
       propertyPath: animationClip2
       value: 
       objectReference: {fileID: 8993902097722301239, guid: 36e9727b58e67409ab1d122861876f33, type: 3}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: animationDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: beatmapManager
       value: 

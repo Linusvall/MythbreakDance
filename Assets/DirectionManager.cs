@@ -79,7 +79,7 @@ public class DirectionManager : MonoBehaviour
             directionMap[direction] += 1;
 
         }
-        StartCoroutine(DeactivateAfterDelay(direction, 0.3f));
+        StartCoroutine(DeactivateAfterDelay(direction, 0.4f));
     }
     private void DeactivateSubCatchBox(string direction)
     {
