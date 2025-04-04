@@ -85,6 +85,12 @@ public class PlayMode : MonoBehaviour
                     currentIndex++;
                 }
             }
+
+            if(audioSource.time >= audioSource.clip.length - 0.1f)
+            {
+                //Ending game here
+                isPlaying = false;
+            }
         }
     }
 
