@@ -13,4 +13,9 @@ public class StartGameButton : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+    public void LoadMainMenu()
+    {
+        print("Wa");
+        SceneManager.LoadScene("MainMenu");
+    }
 }

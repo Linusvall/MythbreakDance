@@ -1073,6 +1073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlayerMesh_180
       objectReference: {fileID: 0}
+    - target: {fileID: 3506188137425647560, guid: 107dba99039db5a40b3976c983a44052, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0135092fc98679348a4b992749d66b7d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
