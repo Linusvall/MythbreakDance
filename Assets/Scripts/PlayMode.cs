@@ -9,6 +9,10 @@ public class PlayMode : MonoBehaviour
     [SerializeField] private GameObject[] spawnPositionArrayPlayer1;
     [SerializeField] private GameObject[] spawnPositionArrayPlayer2;
 
+    [SerializeField] private Material leftArrowMaterial;
+    [SerializeField] private Material rightArrowMaterial;
+    [SerializeField] private Material upArrowMaterial;
+    [SerializeField] private Material downArrowMaterial;
 
     private Beatmap currentBeatmap;
     private AudioSource audioSource;
@@ -16,11 +20,19 @@ public class PlayMode : MonoBehaviour
     private int currentIndex = 0;
     private bool isPlaying;
 
+    [SerializeField] private string songToPlay;
+    [SerializeField] private float waitToPlay;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        
+        Invoke("WaitAndPlay", waitToPlay);
+    }
+
+    private void WaitAndPlay()
+    {
+        PlaySong(songToPlay);
     }
 
     public void PlaySong(string songName)
@@ -71,22 +83,22 @@ public class PlayMode : MonoBehaviour
     {
         GameObject danceArrow = Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
         danceArrow.GetComponent<DanceArrow>().SetDirection(currentBeatmap.beatEvents[currentIndex].direction);
-
+        Renderer renderer = danceArrow.GetComponentInChildren<Renderer>();
 
         switch (currentBeatmap.beatEvents[currentIndex].direction)
         {
             case "Up":
-                danceArrow.transform.rotation = Quaternion.Euler(0, 0, -90);
+                renderer.material = upArrowMaterial;
                 break;
             case "Down":
-                danceArrow.transform.rotation = Quaternion.Euler(0, 0, 90);
+                renderer.material = downArrowMaterial;
                 break;
             case "Right":
-                danceArrow.transform.rotation = Quaternion.Euler(0, 0, -180);
+                renderer.material = rightArrowMaterial;
                 break;
 
             case "Left":
-                danceArrow.transform.rotation = Quaternion.Euler(0, 0, 0);
+                renderer.material = leftArrowMaterial;
                 break;
 
             default:

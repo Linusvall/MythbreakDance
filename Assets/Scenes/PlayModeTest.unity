@@ -2045,6 +2045,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 818223219}
     - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: upArrowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d7307284e7d3e541a42f0a624ddf4dd, type: 2}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: downArrowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e7db685878676134ba0828e39ac507de, type: 2}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: leftArrowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c9a3b8fe35fab7d46ad053d50a53b241, type: 2}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
+      propertyPath: rightArrowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f81dba2167a7efb419e558bade41317f, type: 2}
+    - target: {fileID: 1288513911054807728, guid: cfedd5d8d28c1ea43abd4aad7d904d00, type: 3}
       propertyPath: spawnPositionArray.Array.size
       value: 4
       objectReference: {fileID: 0}

@@ -6,6 +6,13 @@ using UnityEngine.UI;
 public class DirectionManager : MonoBehaviour
 {
     [SerializeField] Text scoreText;
+    [SerializeField] GameObject successParticlePrefab;
+    [SerializeField] GameObject errorParticlePrefab;
+    [SerializeField] Transform positionToSpawnLeft;
+    [SerializeField] Transform positionToSpawnDown;
+    [SerializeField] Transform positionToSpawnUp;
+    [SerializeField] Transform positionToSpawnRight;
+
     Dictionary<string, int> directionMap = new Dictionary<string, int>();
     private int score = 0;
     private int multiplier = 1;
@@ -46,13 +53,14 @@ public class DirectionManager : MonoBehaviour
         if(directionMap[direction] >= 1)
         {
             Debug.Log("Den var rätt");
+            SpawnParticleSystem(successParticlePrefab, direction);
             UpdateScore();
             multiplier++;
             
         }
         else
         {
-            Debug.Log("DU SUGER");
+            SpawnParticleSystem(errorParticlePrefab, direction);
             multiplier = 1;
         }
     }
@@ -84,5 +92,38 @@ public class DirectionManager : MonoBehaviour
         yield return new WaitForSeconds(delay);  
 
         DeactivateSubCatchBox(direction);
+    }
+
+    void SpawnParticleSystem(GameObject particlePrefab, string direction)
+    {
+        Vector3 positionToSpawn = Vector3.zero;
+
+        switch (direction)
+        {
+            case "Up":
+                positionToSpawn = positionToSpawnUp.position;
+                break;
+
+            case "Down":
+                positionToSpawn = positionToSpawnDown.position;
+                break;
+
+            case "Left":
+                positionToSpawn = positionToSpawnLeft.position;
+                break;
+
+            case "Right":
+                positionToSpawn = positionToSpawnRight.position;
+                break;
+        }
+
+        GameObject particleObject = Instantiate(particlePrefab, positionToSpawn, Quaternion.identity);
+
+        ParticleSystem particleSystem = particleObject.GetComponent<ParticleSystem>();
+
+        if (particleSystem != null)
+        {
+            particleSystem.Play();
+        }
     }
 }
