@@ -126,4 +126,6 @@ public class DirectionManager : MonoBehaviour
             particleSystem.Play();
         }
     }
+
+    
 }
